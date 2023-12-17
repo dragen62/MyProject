@@ -17,6 +17,7 @@
 			position: relative;
 			display: block;
 			margin-bottom: 25px;
+			z-index: -1;
 
 			&::before {
 				content: '';
@@ -55,6 +56,11 @@
 			font-weight: 400;
 			line-height: normal;
 			color: @black;
+		}
+
+		&__link:hover &__title {
+			color: #A51505;
+			text-decoration-color: #A51505;
 		}
 
 		&__datetime {

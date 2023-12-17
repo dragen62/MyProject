@@ -206,6 +206,7 @@ body {
   position: relative;
   display: block;
   margin-bottom: 25px;
+  z-index: -1;
 }
 .card-event__picture::before {
   content: '';
@@ -243,6 +244,10 @@ body {
   line-height: normal;
   color: #1f1e1e;
 }
+.card-event__link:hover .card-event__title {
+  color: #A51505;
+  text-decoration-color: #A51505;
+}
 .card-event__datetime {
   margin-top: auto;
   display: block;
@@ -279,7 +284,7 @@ body {
   text-align: center;
 }
 .title {
-  margin: 0 0 150px;
+  margin: 0 auto 150px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7px 45px 9px;
