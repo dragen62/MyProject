@@ -214,14 +214,18 @@ img {
 .listing__title {
   margin-top: 64px;
 }
-.listing__link {
-  display: block;
+.listing__link-container {
   margin-top: 70px;
+  text-align: end;
+}
+.listing__link {
   font-family: "Open Sans";
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  text-align: end;
+}
+.listing__link:hover {
+  color: #A51505;
 }
 .event-card {
   -webkit-box-sizing: border-box;
@@ -238,7 +242,7 @@ img {
           flex-direction: column;
   height: 100%;
 }
-.event-card__link:hover .event-card__link__title {
+.event-card__link:hover {
   color: #A51505;
   text-decoration-color: #A51505;
 }
