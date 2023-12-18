@@ -214,6 +214,15 @@ img {
 .listing__title {
   margin-top: 64px;
 }
+.listing__link {
+  display: block;
+  margin-top: 70px;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: end;
+}
 .event-card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -286,7 +295,13 @@ img {
   font-weight: 300;
   color: #1f1e1e;
 }
+.home__listing {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1334px;
+}
 .article-card {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -308,6 +323,10 @@ img {
   margin-right: 60px;
   font-size: 0;
   text-decoration: none;
+}
+.article-card__link:hover ~ .article-card__info .article-card__title-link {
+  color: #A51505;
+  text-decoration-color: #A51505;
 }
 .article-card__picture {
   display: block;
@@ -392,6 +411,23 @@ img {
   color: inherit;
   -webkit-transition: none;
   transition: none;
+}
+.article-card + .article-card {
+  margin-top: 120px;
+}
+.article-card + .article-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: 0 auto 60px;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1254px;
+  height: 1px;
+  background-color: #1f1e1e;
+  pointer-events: none;
 }
 .event {
   padding: 40px 0 150px;
