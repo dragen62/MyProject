@@ -13,8 +13,6 @@
           <svg class="main-header__picture"
                width="1920"
                height="325">
-               <!--<img src="assets/images/lenni.svg"
-                class="main-header__img"> -->
                 <use xlink:href="assets/icons/symbols.svg#lenni"></use>
             </svg>
 
@@ -34,10 +32,8 @@
         <seciton class="upcoming home__upcoming">
 
         </seciton>
-      
-        <section class="listing home__listing">
 
-        </section>
+        @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
         <section class="contacts home__contacts">
           
