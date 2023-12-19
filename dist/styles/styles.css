@@ -223,9 +223,20 @@ img {
   background-color: #BC3324;
   color: #FFFFFF;
   border: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.offers__event-btn:hover {
+  background-color: #A51505;
 }
 .offers__landlord-btn {
   color: #1f1e1e;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.offers__landlord-btn:hover {
+  background-color: #1f1e1e;
+  color: #FFFFFF;
 }
 .events {
   padding-top: 147px;

@@ -22,9 +22,21 @@
 		background-color: #BC3324;
 		color: #FFFFFF;
 		border: none;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: @red;
+		}
 	}
 
 	&__landlord-btn {
 		color: @black;
+
+		transition: background-color 0.3s, color 0.3s;
+
+		&:hover {
+			background-color: @black;
+			color: #FFFFFF
+		}
 	}
 }
