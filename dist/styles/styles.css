@@ -27,12 +27,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  background-color: #dedede;
+  background-image: url(../../assets/images/noise.png), url(../../assets/images/bg1920.png);
+  background-position: 0 0, 0 0;
+  background-size: auto, 100%, auto;
+  background-repeat: repeat, repeat-y;
+  color: #1f1e1e;
   padding-top: 147px;
   font-family: "Open Sans", serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.375;
+  overflow-x: hidden;
 }
 .main {
   -webkit-box-flex: 1;
@@ -258,7 +265,7 @@ img {
 }
 .home-about__big-text {
   max-width: 868px;
-  margin-bottom: 50px;
+  margin: 0 0 50px 0;
   font-family: "Open Sans";
   font-size: 44px;
   font-weight: 700;
@@ -269,6 +276,7 @@ img {
 }
 .home-about__small-text {
   max-width: 867px;
+  margin: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-family: "Open Sans";
@@ -279,9 +287,6 @@ img {
   text-align: left;
   color: #1f1e1e;
 }
-.home-about__picture {
-  margin-top: 100px;
-}
 .home-about__picture-rock {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -289,10 +294,53 @@ img {
 .home-about__picture-exhibition {
   position: absolute;
   margin-left: 60px;
-  padding-top: 388px;
+  margin-top: 388px;
+}
+.home-about__end-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 110px;
+  gap: 60px;
 }
 .home-about__picture-lobby {
-  margin-top: 100px;
+  display: block;
+  margin: 0px;
+}
+.home-about__end-text {
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 344px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.home-about__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 89px;
+  gap: 128px;
+}
+.home-about__btn-show {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .events {
   padding-top: 147px;

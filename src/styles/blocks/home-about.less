@@ -14,7 +14,7 @@
 
 	&__big-text {
 		max-width: 868px;
-		margin-bottom: 50px;
+		margin: 0 0 50px 0;
 		font-family: "Open Sans";
 		font-size: 44px;
 		font-weight: 700;
@@ -26,6 +26,7 @@
 
 	&__small-text {
 		max-width: 867px;
+		margin: 0;
 		align-self: flex-end;
 		font-family: "Open Sans";
 		font-size: 18px;
@@ -35,10 +36,6 @@
 		text-align: left;
 		color: @black;
 	}
-	
-	&__picture {
-		margin-top: 100px;
-	}
 
 	&__picture-rock {
 		margin-top: 100px;
@@ -47,11 +44,47 @@
 
 	&__picture-exhibition {
 		position: absolute;
-    margin-left: 60px;
-    padding-top: 388px;
+    	margin-left: 60px;
+    	margin-top: 388px;
+	}
+
+	&__end-container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 110px;
+		gap: 60px;
 	}
 
 	&__picture-lobby {
-		margin-top: 100px;
+		display: block;
+		margin: 0px;
+	}
+
+	&__end-text {
+		margin: 0;
+		align-self: flex-end;
+		max-width: 344px;
+		font-family: "Open Sans";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	&__btn-container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 89px;
+		gap: 128px;
+	}
+
+	&__btn-show {
+		font-family: Open Sans;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
 	}
 }
