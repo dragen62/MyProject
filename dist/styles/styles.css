@@ -54,6 +54,17 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 40px;
+  border: 1px solid #1f1e1e;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+}
 .main-header__title,
 .main-header__text {
   padding: 0px 40px;
@@ -160,16 +171,7 @@ img {
   color: #A51505;
 }
 .page-header__user-btn {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 15px 40px;
-  border: 1px solid #1f1e1e;
-  font-size: 16px;
-  line-height: normal;
   color: #1f1e1e;
-  font-weight: 600;
-  text-decoration: none;
-  background-color: transparent;
   -webkit-transition: color 0.2s, background-color 0.2s;
   transition: color 0.2s, background-color 0.2s;
 }
@@ -194,6 +196,36 @@ img {
   font-style: normal;
   font-weight: 500;
   color: #ffffff;
+}
+.offers {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.offers__text {
+  margin-bottom: 46px;
+  font-family: Lora;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.offers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 106.12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.offers__event-btn {
+  background-color: #BC3324;
+  color: #FFFFFF;
+  border: none;
+}
+.offers__landlord-btn {
+  color: #1f1e1e;
 }
 .events {
   padding-top: 147px;
