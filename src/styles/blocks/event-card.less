@@ -2,15 +2,15 @@
 	box-sizing: border-box;
 
 	&__link {
-		text-decoration: none;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		text-decoration: none;
 
-	&:hover{
-		color: @red;
-			text-decoration-color: @red;
-	}
+	&:hover {
+			color: @red_dark;
+			text-decoration-color: @red_dark;
+		}
 	}
 
 	&__picture {
@@ -51,23 +51,26 @@
 
 	&__text {
 		margin: 15px 0;
-		font-size: 16px;
+		font-family: 'Open Sans';
+		font-size: @font_size;
 		font-weight: 400;
 		line-height: normal;
 		color: @black;
 	}
 
 	&__link:hover &__title {
-		color: @red;
-		text-decoration-color: @red;
+		color: @red_dark;
+		text-decoration-color: @red_dark;
 	}
 
 	&__datetime {
 		margin-top: auto;
+		color: @black;
 		display: block;
+		font-family: 'Open Sans';
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 300;
-		color: @black;
+		line-height: normal;
 	}
 }
