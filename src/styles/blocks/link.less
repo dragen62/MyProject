@@ -1,0 +1,30 @@
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0;
+  font-weight: 600;
+  font-size: @font_size;
+  color: @black;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: @red;
+  }
+
+  &:active {
+    color: @red;
+  }
+
+  &__name {
+    display: block;
+    height: 60px;
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+}
