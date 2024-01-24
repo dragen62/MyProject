@@ -1,0 +1,139 @@
+.page-footer {
+  .container;
+  margin-bottom: 75px;
+  
+  &__border {
+    display: flex;
+    margin-bottom: 60px;
+
+    &::before,
+    &::after {
+      content: ' ';
+      flex-grow: 1;
+      height: 2px;
+      width: 2px;
+    }
+
+    &::before {
+      margin-right: 50px;
+      background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+    }
+
+    &::after {
+      margin-left: 50px;
+      background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 100%);      
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 198px;
+      width: 4px;
+      background-color: @red;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: @font1;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: color 0,2s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @red_dark;
+    }
+
+    &--bottom {
+      margin-left: 0;
+    }
+  }
+
+  &__form-title {
+    font-family: @font1;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 13.5px;
+  }
+
+  &__form-container {
+    display: flex;
+    margin-bottom: 15px;
+    width: 410px;
+  }
+
+  &__input {
+    padding: 15px 28px;
+    width: 100%;
+    height: 49px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 15px 23px;
+    height: 49px;
+    background-color: @black;
+    color: @white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &__copyright {
+    margin-bottom: 20px;
+  }
+
+  &__bottom-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cookie {
+    display: flex;
+    gap: 60px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 44px;
+    margin-top: -40px;
+  }
+
+  &__tagree {
+    display: flex;
+    gap: 15px;
+    
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  &__tagree-svg {
+    display: block;
+    margin-top: 5px;
+  }
+}
