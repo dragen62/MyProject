@@ -383,7 +383,7 @@ img {
       align-self: center;
   background-color: #1f1e1e;
   text-transform: uppercase;
-  font-family: Lora;
+  font-family: 'Lora';
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -793,6 +793,9 @@ img {
   max-width: 344px;
   width: 100%;
 }
+.about__icon {
+  color: red;
+}
 .events {
   padding-top: 147px;
 }
@@ -813,6 +816,60 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 120px 60px;
+  margin-bottom: 70px;
+}
+.events__show-link {
+  max-width: 128px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 7px;
+  max-height: 132px;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+.events__link-name {
+  height: auto;
+  margin-bottom: 18px;
+}
+.events__icon {
+  margin: 0;
+  margin-top: 18px;
+  -webkit-transform: rotate(0.25turn);
+      -ms-transform: rotate(0.25turn);
+          transform: rotate(0.25turn);
+}
+.events__info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 150px;
+}
+.events__info-item {
+  text-align: center;
+  max-width: 401px;
+}
+.events__info-icon {
+  margin-bottom: 40px;
+}
+.events__info-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
 }
 .listing__event-card {
   max-width: 405px;
@@ -1305,4 +1362,121 @@ img {
 .page-footer__tagree-svg {
   display: block;
   margin-top: 5px;
+}
+.page-footer__link {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.page-footer__link:hover {
+  color: #BC3324;
+}
+.additional {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.additional__section-title {
+  font-weight: 400;
+}
+.additional__text {
+  max-width: 868px;
+  margin-bottom: 60px;
+  color: #1f1e1e;
+  font-weight: 400;
+}
+.additional__offers {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #1f1e1e;
+  text-align: center;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__th {
+  height: 85px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.table__footer-th {
+  height: 60px;
+  font-size: 0;
+}
+.table__th,
+.table__footer-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-right: 1px solid #BFBFBF;
+  text-transform: uppercase;
+}
+.table__th:first-child,
+.table__footer-th:first-child {
+  padding-left: 0;
+}
+.table__th:last-child,
+.table__footer-th:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.table__body-th {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px 10px 10px 0;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+.table__td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.table__td:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+.ok {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #1f1e1e;
+}
+.ok::after {
+  content: "";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 8px;
+  height: 14px;
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

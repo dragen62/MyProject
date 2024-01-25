@@ -70,11 +70,68 @@
                   }
                   ])
                </div>
+               <a href="#" class="events__show-link link">
+                  <span class="events__link-name link__name">
+                     Показать ещё
+                   </span>
+                  <svg class="events__icon link__icon" 
+                                       width="91" 
+                                       height="60">
+                     <use xlink:href="assets/icons/symbols.svg#arrow">
+                   </svg>
+               </a>
             </div>
          </div>
+
+         @@include('blocks/additional.html')
+     
+         @@include('blocks/offers.html', {"class": "additional__offers"})
+
+         <div class="events__info-container">
+            <div class="events__info-item">
+              <svg class="events__info-icon">
+                <use xlink:href="assets/icons/symbols.svg#information"></use>
+              </svg>
+              <p class="events__info-title">
+               Цены
+              </p>
+              <p class="events__info-text">
+               Цены, указанные на сайте носят информационный характер.
+               Мы придерживаемся индивидуального подхода в работе с клиентом.
+              </p>
+            </div>
+
+            <div class="events__info-item">
+              <svg class="events__info-icon">
+                <use xlink:href="assets/icons/symbols.svg#contact"></use>
+              </svg>
+              <p class="events__info-title">
+               Контакты
+              </p>
+              <p class="events__info-text">
+               Отдел организации мероприятий <br>
+               +7 499 350 0730 <br>
+               hi@tagree.ru
+              </p>
+            </div>
+
+            <div class="events__info-item">
+              <svg class="events__info-icon">
+                <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+              </svg>
+              <p class="events__info-title">
+               Преимущество
+              </p>
+              <p class="events__info-text">
+               Мы имеем все возможности для того, чтобы помочь как 
+               малому бизнесу и молодым талантам, так и большим 
+               корпорациям и холдингам.
+              </p>   
+            </div>
+          </div>
       </main>
 
-      @@include('blocks/footer.html')
+      @@include('blocks/page-footer.html')
 
    </body>
 </html>
